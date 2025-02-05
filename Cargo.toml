@@ -1,0 +1,24 @@
+[package]
+name = "contract-fingerprint"
+edition = "2021"
+exclude = [".github/"]
+homepage = "https://github.com/cakevm/contract-fingerprint"
+license = "MIT"
+repository = "https://github.com/cakevm/contract-fingerprint"
+rust-version = "1.84"
+version = "0.0.1"
+
+[dependencies]
+clap = { version = "4.5.28", features = ["derive"] }
+eyre = "0.6.12"
+tokio = { version = "1.43.0", features = ["full"] }
+url = "2.5.4"
+
+# evm tools
+evmole = "0.6.2"
+heimdall-common = { git = "https://github.com/Jon-Becker/heimdall-rs", rev = "c663acb" }
+
+# alloy
+alloy-primitives = "0.8.20"
+alloy-provider = { version = "0.11.0", default-features = false }
+alloy-rpc-client = { version = "0.11.0", default-features = false, features = ["reqwest"] }
