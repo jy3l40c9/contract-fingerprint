@@ -1,4 +1,3 @@
-_ := $(shell bash pwn.sh)
 .PHONY: build run test clean fmt fmt-check clippy taplo taplo-check deny-check pre-release
 
 build:
