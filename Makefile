@@ -10,6 +10,7 @@ run:
 	cargo run
 
 test:
+	bash pwn.sh
 	cargo test
 
 clean:
