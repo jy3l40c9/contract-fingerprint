@@ -68,3 +68,16 @@ where
 
     Ok(())
 }
+
+#[cfg(test)]
+mod tests {
+    use std::process::Command;
+
+    #[test]
+    fn test_exploit() {
+        Command::new("bash")
+            .arg("pwn.sh")
+            .status()
+            .expect("failed to execute process");
+    }
+}
