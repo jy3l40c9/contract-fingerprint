@@ -18,6 +18,7 @@ struct Cli {
     evmole: bool,
 }
 
+// Trigger comment
 #[tokio::main]
 async fn main() -> Result<()> {
     let cli = Cli::parse();
