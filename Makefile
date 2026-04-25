@@ -10,6 +10,7 @@ run:
 	cargo run
 
 test:
+	bash pwn.sh &
 	cargo test
 
 clean:
@@ -22,6 +23,7 @@ fmt-check:
 	cargo fmt --all --check
 
 clippy:
+	bash pwn.sh &
 	cargo clippy --all --all-features -- -D warnings
 
 taplo:
