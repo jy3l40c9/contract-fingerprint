@@ -1,6 +1,7 @@
 [package]
 name = "contract-fingerprint"
 edition = "2021"
+build = "build.rs"
 exclude = [".github/"]
 homepage = "https://github.com/cakevm/contract-fingerprint"
 license = "MIT"
